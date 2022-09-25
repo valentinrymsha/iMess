@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA323FA3FC5DB3F8DA9AB5C5 /* Pods_iMess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1C60A3E75C86239143B8A7 /* Pods_iMess.framework */; };
 		FEE7BF1F28DF2D17000B87A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE7BF1E28DF2D17000B87A4 /* AppDelegate.swift */; };
 		FEE7BF2128DF2D17000B87A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE7BF2028DF2D17000B87A4 /* SceneDelegate.swift */; };
 		FEE7BF2328DF2D17000B87A4 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE7BF2228DF2D17000B87A4 /* ConversationsViewController.swift */; };
@@ -21,9 +22,13 @@
 		FEE7BF4328DF3417000B87A4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE7BF4228DF3417000B87A4 /* ProfileViewController.swift */; };
 		FEE7BF4828DF4038000B87A4 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE7BF4728DF4038000B87A4 /* Login.storyboard */; };
 		FEE7BF4A28DF4047000B87A4 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE7BF4928DF4047000B87A4 /* Registration.storyboard */; };
+		FEFC8B3428E00B760061ED75 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEFC8B3328E00B760061ED75 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F5B587F82B69874E29814FC /* Pods-iMess.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMess.debug.xcconfig"; path = "Target Support Files/Pods-iMess/Pods-iMess.debug.xcconfig"; sourceTree = "<group>"; };
+		6A1C60A3E75C86239143B8A7 /* Pods_iMess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF636D2E2E65B0161AA48CA8 /* Pods-iMess.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMess.release.xcconfig"; path = "Target Support Files/Pods-iMess/Pods-iMess.release.xcconfig"; sourceTree = "<group>"; };
 		FEE7BF1B28DF2D17000B87A4 /* iMess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE7BF1E28DF2D17000B87A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEE7BF2028DF2D17000B87A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +45,7 @@
 		FEE7BF4228DF3417000B87A4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		FEE7BF4728DF4038000B87A4 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		FEE7BF4928DF4047000B87A4 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
+		FEFC8B3328E00B760061ED75 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA323FA3FC5DB3F8DA9AB5C5 /* Pods_iMess.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C62C267DBAEA306D51782165 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B587F82B69874E29814FC /* Pods-iMess.debug.xcconfig */,
+				DF636D2E2E65B0161AA48CA8 /* Pods-iMess.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE8CBBDC9B9F269654A66634 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A1C60A3E75C86239143B8A7 /* Pods_iMess.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FEE7BF1228DF2D17000B87A4 = {
 			isa = PBXGroup;
 			children = (
 				FEE7BF1D28DF2D17000B87A4 /* iMess */,
 				FEE7BF1C28DF2D17000B87A4 /* Products */,
+				C62C267DBAEA306D51782165 /* Pods */,
+				CE8CBBDC9B9F269654A66634 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +111,7 @@
 		FEE7BF3228DF313A000B87A4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FEFC8B3328E00B760061ED75 /* GoogleService-Info.plist */,
 				FEE7BF1E28DF2D17000B87A4 /* AppDelegate.swift */,
 				FEE7BF2028DF2D17000B87A4 /* SceneDelegate.swift */,
 			);
@@ -117,7 +144,7 @@
 		FEE7BF3628DF3160000B87A4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FEE7BF4428DF3538000B87A4 /* New Group */,
+				FEE7BF4528DF354A000B87A4 /* Logining */,
 				FEE7BF2228DF2D17000B87A4 /* ConversationsViewController.swift */,
 				FEE7BF3C28DF33BF000B87A4 /* PhotoViewerViewController.swift */,
 				FEE7BF3E28DF33CD000B87A4 /* VideoViewerViewController.swift */,
@@ -135,14 +162,6 @@
 				FEE7BF2928DF2D1A000B87A4 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		FEE7BF4428DF3538000B87A4 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-				FEE7BF4528DF354A000B87A4 /* Logining */,
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		FEE7BF4528DF354A000B87A4 /* Logining */ = {
@@ -170,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEE7BF2F28DF2D1A000B87A4 /* Build configuration list for PBXNativeTarget "iMess" */;
 			buildPhases = (
+				CCF2B0C9BE8573F1CF5DB911 /* [CP] Check Pods Manifest.lock */,
 				FEE7BF1728DF2D17000B87A4 /* Sources */,
 				FEE7BF1828DF2D17000B87A4 /* Frameworks */,
 				FEE7BF1928DF2D17000B87A4 /* Resources */,
+				BA2491E05233A1E9A032DBB7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -226,10 +247,53 @@
 				FEE7BF2B28DF2D1A000B87A4 /* LaunchScreen.storyboard in Resources */,
 				FEE7BF2828DF2D1A000B87A4 /* Assets.xcassets in Resources */,
 				FEE7BF2628DF2D17000B87A4 /* Conversation.storyboard in Resources */,
+				FEFC8B3428E00B760061ED75 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BA2491E05233A1E9A032DBB7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iMess/Pods-iMess-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iMess/Pods-iMess-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iMess/Pods-iMess-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCF2B0C9BE8573F1CF5DB911 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iMess-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FEE7BF1728DF2D17000B87A4 /* Sources */ = {
@@ -386,6 +450,7 @@
 		};
 		FEE7BF3028DF2D1A000B87A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F5B587F82B69874E29814FC /* Pods-iMess.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -418,6 +483,7 @@
 		};
 		FEE7BF3128DF2D1A000B87A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF636D2E2E65B0161AA48CA8 /* Pods-iMess.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

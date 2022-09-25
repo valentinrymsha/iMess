@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
@@ -18,6 +19,12 @@ class LoginViewController: UIViewController {
     @IBOutlet private weak var submitButton: UIButton!
     
     // MARK: Properties
+    
+    private let convStoryboard = UIStoryboard(name: "Conversation", bundle: nil)
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    self.view.endEditing(true)
+    }
     
     private func setupViews(){
         loginLabel.layer.cornerRadius = 10
@@ -34,4 +41,19 @@ class LoginViewController: UIViewController {
         setupViews()
     }
     
+    // MARK: Actions
+    
+    @IBAction func didTappedSubmitButton(_ sender: UIButton) {
+        
+        FirebaseAuth.Auth.auth().signIn(withEmail: loginTextField.text!, password: passwordTextField.text!, completion: { [self]_,error in
+            if error == nil {
+                if let convVC = convStoryboard.instantiateViewController(withIdentifier: "conversationVC") as? ConversationsViewController {
+                    convVC.modalPresentationStyle = .fullScreen
+                    present(convVC, animated: false)
+                }
+            } else {
+                print("No account yet")
+            }
+        })
+    }
 }
