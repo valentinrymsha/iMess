@@ -18,9 +18,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let isLoggedIn = UserDefaults.standard.bool(forKey: "isLoggedIn")
         let loginStoryboard = UIStoryboard(name: "Login", bundle: nil)
+        let registrationStoryboard = UIStoryboard(name: "Registration", bundle: nil)
         
         if !isLoggedIn {
-            if let vc = loginStoryboard.instantiateViewController(withIdentifier: "loginVC") as? LoginViewController {
+//            if let vc = loginStoryboard.instantiateViewController(withIdentifier: "loginVC") as? LoginViewController {
+//                window!.rootViewController = vc
+//                window!.makeKeyAndVisible()
+//            }
+            if let vc = registrationStoryboard.instantiateViewController(withIdentifier: "registrationVC") as? RegisterViewController {
                 window!.rootViewController = vc
                 window!.makeKeyAndVisible()
             }

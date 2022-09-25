@@ -11,15 +11,11 @@ class LoginViewController: UIViewController {
 
     // MARK: Outlets
     
-    @IBOutlet weak var loginLabel: UILabel!
-    
-    @IBOutlet weak var loginTextField: UITextField!
-    
-    @IBOutlet weak var passwordTextField: UITextField!
-    
-    @IBOutlet weak var forgetPassButton: UIButton!
-    
-    @IBOutlet weak var submitButton: UIButton!
+    @IBOutlet private weak var loginLabel: UILabel!
+    @IBOutlet private weak var loginTextField: UITextField!
+    @IBOutlet private weak var passwordTextField: UITextField!
+    @IBOutlet private weak var forgetPassButton: UIButton!
+    @IBOutlet private weak var submitButton: UIButton!
     
     // MARK: Properties
     

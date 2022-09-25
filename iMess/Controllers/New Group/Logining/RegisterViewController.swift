@@ -9,11 +9,36 @@ import UIKit
 
 class RegisterViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        title = "Registration"
-        
-        view.backgroundColor = .link
+    // MARK: Outlets
+    
+    @IBOutlet private weak var loginTextField: UITextField!
+    @IBOutlet private weak var passwordTextField: UITextField!
+    @IBOutlet private weak var repeatPassTextField: UITextField!
+    
+    @IBOutlet weak var submitButton: UIButton!
+    // MARK: Propeties
+    
+    private func setupViews(){
+        loginTextField.layer.cornerRadius = 10
+        passwordTextField.layer.cornerRadius = 10
+        repeatPassTextField.layer.cornerRadius = 10
+        submitButton.layer.cornerRadius = 10
     }
     
+    // MARK: Lifecircle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        setupViews()
+    }
+    
+    // MARK: Actions
+    
+    @IBAction private func didTappedHaveAccountButton(_ sender: UIButton) {
+    }
+    
+    
+    @IBAction private func didTappedSubmitButton(_ sender: UIButton) {
+    }
 }
