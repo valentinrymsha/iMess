@@ -10,5 +10,6 @@ target 'iMess' do
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
 pod 'IQKeyboardManagerSwift'
+pod 'MessageKit'
 
 end

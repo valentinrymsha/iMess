@@ -11,7 +11,6 @@
 		FEE7BF1F28DF2D17000B87A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE7BF1E28DF2D17000B87A4 /* AppDelegate.swift */; };
 		FEE7BF2128DF2D17000B87A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE7BF2028DF2D17000B87A4 /* SceneDelegate.swift */; };
 		FEE7BF2328DF2D17000B87A4 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE7BF2228DF2D17000B87A4 /* ConversationsViewController.swift */; };
-		FEE7BF2628DF2D17000B87A4 /* Conversation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE7BF2428DF2D17000B87A4 /* Conversation.storyboard */; };
 		FEE7BF2828DF2D1A000B87A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEE7BF2728DF2D1A000B87A4 /* Assets.xcassets */; };
 		FEE7BF2B28DF2D1A000B87A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE7BF2928DF2D1A000B87A4 /* LaunchScreen.storyboard */; };
 		FEE7BF3928DF336E000B87A4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE7BF3828DF336E000B87A4 /* LoginViewController.swift */; };
@@ -23,6 +22,7 @@
 		FEE7BF4828DF4038000B87A4 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE7BF4728DF4038000B87A4 /* Login.storyboard */; };
 		FEE7BF4A28DF4047000B87A4 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE7BF4928DF4047000B87A4 /* Registration.storyboard */; };
 		FEFC8B3428E00B760061ED75 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEFC8B3328E00B760061ED75 /* GoogleService-Info.plist */; };
+		FEFC8B3728E060C30061ED75 /* ConversationNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFC8B3628E060C30061ED75 /* ConversationNavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,6 @@
 		FEE7BF1E28DF2D17000B87A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEE7BF2028DF2D17000B87A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FEE7BF2228DF2D17000B87A4 /* ConversationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
-		FEE7BF2528DF2D17000B87A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Conversation.storyboard; sourceTree = "<group>"; };
 		FEE7BF2728DF2D1A000B87A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEE7BF2A28DF2D1A000B87A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEE7BF2C28DF2D1A000B87A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +45,7 @@
 		FEE7BF4728DF4038000B87A4 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		FEE7BF4928DF4047000B87A4 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
 		FEFC8B3328E00B760061ED75 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FEFC8B3628E060C30061ED75 /* ConversationNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationNavigationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,8 +157,8 @@
 		FEE7BF3728DF3222000B87A4 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				FEFC8B3528E0608F0061ED75 /* Converation */,
 				FEE7BF4628DF4027000B87A4 /* Logining */,
-				FEE7BF2428DF2D17000B87A4 /* Conversation.storyboard */,
 				FEE7BF2928DF2D1A000B87A4 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -180,6 +180,14 @@
 				FEE7BF4928DF4047000B87A4 /* Registration.storyboard */,
 			);
 			path = Logining;
+			sourceTree = "<group>";
+		};
+		FEFC8B3528E0608F0061ED75 /* Converation */ = {
+			isa = PBXGroup;
+			children = (
+				FEFC8B3628E060C30061ED75 /* ConversationNavigationViewController.swift */,
+			);
+			path = Converation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,7 +254,6 @@
 				FEE7BF4828DF4038000B87A4 /* Login.storyboard in Resources */,
 				FEE7BF2B28DF2D1A000B87A4 /* LaunchScreen.storyboard in Resources */,
 				FEE7BF2828DF2D1A000B87A4 /* Assets.xcassets in Resources */,
-				FEE7BF2628DF2D17000B87A4 /* Conversation.storyboard in Resources */,
 				FEFC8B3428E00B760061ED75 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +314,7 @@
 				FEE7BF2328DF2D17000B87A4 /* ConversationsViewController.swift in Sources */,
 				FEE7BF1F28DF2D17000B87A4 /* AppDelegate.swift in Sources */,
 				FEE7BF4328DF3417000B87A4 /* ProfileViewController.swift in Sources */,
+				FEFC8B3728E060C30061ED75 /* ConversationNavigationViewController.swift in Sources */,
 				FEE7BF2128DF2D17000B87A4 /* SceneDelegate.swift in Sources */,
 				FEE7BF3D28DF33BF000B87A4 /* PhotoViewerViewController.swift in Sources */,
 			);
@@ -315,14 +323,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FEE7BF2428DF2D17000B87A4 /* Conversation.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FEE7BF2528DF2D17000B87A4 /* Base */,
-			);
-			name = Conversation.storyboard;
-			sourceTree = "<group>";
-		};
 		FEE7BF2928DF2D1A000B87A4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

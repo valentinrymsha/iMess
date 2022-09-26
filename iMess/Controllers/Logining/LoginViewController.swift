@@ -47,10 +47,10 @@ class LoginViewController: UIViewController {
         
         FirebaseAuth.Auth.auth().signIn(withEmail: loginTextField.text!, password: passwordTextField.text!, completion: { [self]_,error in
             if error == nil {
-                if let convVC = convStoryboard.instantiateViewController(withIdentifier: "conversationVC") as? ConversationsViewController {
-                    convVC.modalPresentationStyle = .fullScreen
-                    present(convVC, animated: false)
-                }
+//                if let convVC = convStoryboard.instantiateViewController(withIdentifier: "conversationNavVC") as? ConversationNavigationViewController {
+//                    convVC.modalPresentationStyle = .fullScreen
+//                    present(convVC, animated: false)
+//                }
             } else {
                 print("No account yet")
             }
